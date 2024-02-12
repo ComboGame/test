@@ -2,31 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    --foreground-rgb: 0, 0, 0;
-    --background-start-rgb: 214, 219, 220;
-    --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --foreground-rgb: 255, 255, 255;
-        --background-start-rgb: 0, 0, 0;
-        --background-end-rgb: 0, 0, 0;
-    }
-}
-
 body {
-    color: rgb(var(--foreground-rgb));
-    background: linear-gradient(
-            to bottom,
-            transparent,
-            rgb(var(--background-end-rgb))
-    ) rgb(var(--background-start-rgb));
+    color: white;
+    background: #0E0D14;
 }
-
-@layer utilities {
-    .text-balance {
-        text-wrap: balance;
+@keyframes animate-homeCircle {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
+@keyframes homeCircleOpacity {
+    0% {
+        opacity: .5;
+    }
+    100% {
+        opacity: .7;
+    }
+}
+@keyframes homeCirclePosition {
+    0% {
+        transform: translate(-150px) scale(.8);
+    }
+    25% {
+        transform: translateY(150px) scale(1);
+    }
+    50% {
+        transform: translate(150px) scale(1.2);
+    }
+    75% {
+        transform: translateY(-150px) scale(1);
+    }
+    100% {
+        transform: translate(-150px) scale(.8);
+    }
+}
+.animate-homeCirclesContainer {
+    animation: homeCirclesContainer .75s ease-in-out;
+}
+.animate-homeCircle {
+    animation: homeCircleOpacity 8s ease-in-out var(--opacity-delay) infinite alternate, homeCirclePosition 20s ease-in-out var(--position-delay) infinite alternate;
+}
+.\[--opacity-delay\:-8s\] {
+    --opacity-delay: -8s;
+}
+.\[--position-delay\:-3s\] {
+    --position-delay: -3s;
+}
+
