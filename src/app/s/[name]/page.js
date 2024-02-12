@@ -26,11 +26,11 @@ export default function Server() {
                 <div
                     className="motion-safe:animate-homeCirclesContainer grid h-full w-full grid-rows-1 place-items-center opacity-30 [grid-area:1/1] dark:opacity-75 children:[grid-area:1/1]">
                     <div
-                        className="animate-homeCircle [--opacity-delay:-8s] [--position-delay:-3s] absolute w-[300px] h-[300px] bg-[#18B2DE] blur-2xl rounded-full"></div>
+                        className="animate-homeCircle [--opacity-delay:-0s] [--position-delay:-20s] absolute w-[300px] h-[300px] bg-[#18B2DE] blur-2xl rounded-full"></div>
                     <div
-                        className="animate-homeCircle [--opacity-delay:0s] [--position-delay:-17s] absolute w-[300px] h-[300px] bg-[#FB37FF] blur-2xl rounded-full"></div>
-                    <div
-                        className="animate-homeCircle [--opacity-delay:-4s] [--position-delay:-14s] absolute w-[300px] h-[300px] bg-[#FF3737] blur-2xl rounded-full"></div>
+                        className="animate-homeCircle [--opacity-delay:-0s] [--position-delay:-0s] absolute w-[300px] h-[300px] bg-[#FB37FF] blur-2xl rounded-full"></div>
+                    {/*<div*/}
+                    {/*    className="animate-homeCircle [--opacity-delay:-4s] [--position-delay:-14s] absolute w-[300px] h-[300px] bg-[#FF3737] blur-2xl rounded-full"></div>*/}
                 </div>
             </div>
         </main>

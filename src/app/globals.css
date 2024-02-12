@@ -19,34 +19,37 @@ body {
 }
 @keyframes homeCircleOpacity {
     0% {
-        opacity: .5;
+        opacity: .0;
+    }
+    50% {
+        opacity: .9;
     }
     100% {
-        opacity: .7;
+        opacity: .0;
     }
 }
 @keyframes homeCirclePosition {
     0% {
-        transform: translate(-150px) scale(.8);
+        transform: translate(-550px) scale(.1);
     }
     25% {
-        transform: translateY(150px) scale(1);
+        transform: translateY(450px) scale(1);
     }
     50% {
-        transform: translate(150px) scale(1.2);
+        transform: translate(0px) scale(3.2);
     }
     75% {
-        transform: translateY(-150px) scale(1);
+        transform: translateY(-450px) scale(1);
     }
     100% {
-        transform: translate(-150px) scale(.8);
+        transform: translate(550px) scale(.1);
     }
 }
 .animate-homeCirclesContainer {
     animation: homeCirclesContainer .75s ease-in-out;
 }
 .animate-homeCircle {
-    animation: homeCircleOpacity 8s ease-in-out var(--opacity-delay) infinite alternate, homeCirclePosition 20s ease-in-out var(--position-delay) infinite alternate;
+    animation: homeCircleOpacity 20s ease-in-out var(--opacity-delay) infinite alternate, homeCirclePosition 20s ease-in-out var(--position-delay) infinite alternate;
 }
 .\[--opacity-delay\:-8s\] {
     --opacity-delay: -8s;

@@ -1,5 +1,6 @@
 import "./globals.css";
 import localFont from 'next/font/local'
+import Header from "@/app/s/[name]/components/header";
 const Gilroy = localFont({
     src: [
         {
@@ -64,8 +65,13 @@ export const metadata = {
 
 export default function RootLayout({children}) {
     return (
-        <html lang="en">
-        <body className={`${Gilroy.variable} overflow-hidden font-sans min-w-[591px]`}>{children}</body>
+        <html lang="en" className="dark antialiased [--scrollbar-size:theme(width.4)] motion-safe:scroll-smooth">
+            <body className={`${Gilroy.variable} overflow-hidden font-sans min-w-[591px]`}>
+
+                {children}
+
+            </body>
         </html>
-    );
+)
+    ;
 }
