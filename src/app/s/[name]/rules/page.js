@@ -1,14 +1,10 @@
-import NavRight from "./components/navright";
-import NavLeft from "./components/nav";
-import NavBtn from "./components/drawerbtn";
-import {Title, H2, H3, CustomImage} from "./components/wiki";
+import {Title, H2, H3, CustomImage} from "@/app/s/[name]/wiki/components/wiki";
 
 
-export default function Wiki() {
+export default function Rules() {
     return (
-        <div className="grid gap-12 pt-[4.5rem] lg:grid-cols-[13rem_1fr_11rem] lg:grid-rows-none lg:gap-8 xl:grid-cols-[14rem_1fr_12rem]">
-            <NavLeft/>
-            <NavBtn/>
+        <div className="grid gap-12 pt-[4.5rem] lg:grid-cols-[13rem_1fr_11rem] px-2 lg:px-0 lg:grid-rows-none lg:gap-8 xl:grid-cols-[14rem_1fr_12rem]">
+            <div className="hidden lg:block"></div>
 
             <div className="lg:mx-auto">
                 <div className="grid items-start pb-12 lg:mt-8 lg:w-[32rem] xl:w-[40rem] 2xl:w-[48rem]">
@@ -62,38 +58,7 @@ export default function Wiki() {
                 </div>
             </div>
             <div className="hidden py-8 lg:block select-none">
-                <div className="grid items-start gap-6 lg:sticky lg:top-28">
-                    <div className="grid gap-3 text-sm">
-                        <div
-                            className="grid grid-cols-[auto_1fr_auto] items-center justify-start gap-[15px] font-sans text-xl font-semibold text-schalker-purple">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" width="24" height="24"
-                                 viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none"
-                                 strokeLinecap="round" strokeLinejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <line x1="4" y1="6" x2="20" y2="6"></line>
-                                <line x1="4" y1="12" x2="14" y2="12"></line>
-                                <line x1="4" y1="18" x2="18" y2="18"></line>
-                            </svg>
-                            Навигация
-                        </div>
-                        <nav>
-                            <ul>
-                                <NavRight
-                                    title="Впервые на сервере?"
-                                    link="first-time"
-                                />
-                                <NavRight
-                                    title="Ищете гайды?"
-                                    link="guides"
-                                />
-                                <NavRight
-                                    title="Остались вопросы?"
-                                    link="questions"
-                                />
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
+
 
             </div>
         </div>
