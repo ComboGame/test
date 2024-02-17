@@ -143,6 +143,23 @@ body {
     }
 }
 
+@media (prefers-reduced-motion: no-preference) {
+
+    @keyframes homeCircle {
+        0% {
+            opacity: 0
+        }
+
+        to {
+            opacity: .5
+        }
+    }
+
+    .motion-safe\:animate-homeCircle {
+        animation: homeCircle .75s ease-in-out
+    }
+}
+
 #element::-webkit-scrollbar {
     width: 6px;
 }
