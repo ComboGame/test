@@ -1,0 +1,18 @@
+<svg width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip111_254">
+			<rect id="Айфон" width="20.000000" height="20.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip111_254)">
+		<rect id="rect" x="4.583374" y="1.666748" rx="3.000000" width="10.833306" height="16.666666" fill="#000000" fill-opacity="0"/>
+		<rect id="rect" x="4.583374" y="1.666748" rx="3.000000" width="10.833306" height="16.666666" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000"/>
+		<path id="path" d="M9.18665 4.89674L9.16663 4.91675C8.74664 4.91675 8.41663 4.58675 8.41663 4.16675C8.41663 3.74675 8.74664 3.41675 9.16663 3.41675L9.18665 3.43675L9.18665 4.89674ZM10.8133 3.43675L10.8333 3.41675C11.2533 3.41675 11.5833 3.74675 11.5833 4.16675C11.5833 4.58675 11.2533 4.91675 10.8333 4.91675L10.8133 4.89674L10.8133 3.43675Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M9.16663 4.16675L10.8333 4.16675" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+		<path id="path" d="M8.35327 16.5632L8.33325 16.5833C7.91327 16.5833 7.58325 16.2533 7.58325 15.8333C7.58325 15.4133 7.91327 15.0833 8.33325 15.0833L8.35327 15.1033L8.35327 16.5632ZM11.6465 15.1033L11.6666 15.0833C12.0865 15.0833 12.4166 15.4133 12.4166 15.8333C12.4166 16.2533 12.0865 16.5833 11.6666 16.5833L11.6465 16.5632L11.6465 15.1033Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M8.33325 15.8333L11.6666 15.8333" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+	</g>
+</svg>
