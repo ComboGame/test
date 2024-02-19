@@ -2,7 +2,7 @@ import localFont from "next/font/local";
 import Image from "next/image";
 import Link from 'next/link'
 import Header from "@/app/auth/components/header";
-import RegistrationForm from "@/app/auth/signup/components/RegistrationForm";
+import EmailVerifyForm from "@/app/auth/verify-email/components/EmailVerifyForm";
 
 const Gilroy = localFont({
     src: [
@@ -81,14 +81,14 @@ export default function SignUp() {
             <section className="xl:grid grid-cols-[50%,50%] min-h-screen">
                 <div className="w-full pt-[160px] justify-center flex px-[25px] sm:px-0">
                     <div className="relative w-[460px]">
-                        <h1 className="text-center font-semibold text-[36px] mb-[50px]">Регистрация</h1>
-                        <RegistrationForm/>
-                        <div className="justify-center flex font-medium text-[14px] sm:text-[18px]">
-                            <p className="">Уже есть аккаунт?</p>
-                            <Link className="underline hover:no-underline ml-2" href="/auth/signin">
-                                Войти
-                            </Link>
-                        </div>
+                        <h1 className="text-center font-semibold text-[36px] mb-[25px]">Проверьте почту</h1>
+                        <p className="my-[25px] text-[20px] text-white text-left mx-auto font-normal">
+                            На электронную почту <span
+                            className="font-semibold text-[#B8B8FF]">_eluexe***sos@gmail.com</span>, отправлено
+                            электронное письмо с кодом для подтверждения вашей учетной записи.
+                        </p>
+                        <EmailVerifyForm/>
+
                     </div>
                 </div>
                 <div className="pt-[150px]  bg-[#0D0C11] select-none justify-center hidden xl:flex">
