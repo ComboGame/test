@@ -39,7 +39,7 @@ export default function RegistrationForm({}) {
         <form className="mb-[50px] mx-auto" onSubmit={handleRegistration}>
             <div className="mb-5">
                 <input type="login" id="login"
-                       className="bg-inherit border border-[#262337] placeholder-[#A39DC0] text-[#A39DC0] text-[18px] rounded-[10px] focus:ring-[#262337] focus:border-[#262337] block w-full px-[25px] py-2.5"
+                       className="bg-[#2F1119] border border-[#FF5C89] placeholder-[#A39DC0] outline-none text-[#FF5C89] text-[18px] rounded-[10px] block w-full px-[25px] py-2.5"
                        placeholder="Логин"
                        required
                        value={login}
@@ -48,10 +48,11 @@ export default function RegistrationForm({}) {
                            setLogin(e.target.value)
                        }}
                 />
+                <p className="mt-[6px] text-sm text-[#FF7DA0]">Ошибка! Такой логин уже занят!</p>
             </div>
             <div className="mb-5">
                 <input type="email" id="email"
-                       className="bg-inherit border border-[#262337] placeholder-[#A39DC0] text-[#A39DC0] text-[18px] rounded-[10px] focus:ring-[#262337] focus:border-[#262337] block w-full px-[25px] py-2.5"
+                       className="bg-inherit border border-[#262337] placeholder-[#A39DC0] outline-none text-[#A39DC0] text-[18px] rounded-[10px] focus:ring-[#262337] focus:border-[#262337] block w-full px-[25px] py-2.5"
                        placeholder="Электронная почта"
                        required
                        maxLength={50}
@@ -63,7 +64,7 @@ export default function RegistrationForm({}) {
             </div>
             <div className="relative mb-5">
                 <input type={isPassword1Shown ? "text" : "password"} id="password"
-                       className="bg-inherit border border-[#262337] placeholder-[#A39DC0] text-[#A39DC0] text-[18px] rounded-[10px] focus:ring-[#262337] focus:border-[#262337] block w-full px-[25px] py-2.5"
+                       className="bg-inherit border border-[#262337] placeholder-[#A39DC0] outline-none text-[#A39DC0] text-[18px] rounded-[10px] focus:ring-[#262337] focus:border-[#262337] block w-full px-[25px] py-2.5"
                        placeholder="Пароль"
                        required
                        value={password1}
@@ -87,7 +88,7 @@ export default function RegistrationForm({}) {
             </div>
             <div className="relative mb-5">
                 <input type={isPassword2Shown ? "text" : "password"} id="password-repeat"
-                       className="bg-inherit border border-[#262337] placeholder-[#A39DC0] text-[#A39DC0] text-[18px] rounded-[10px] focus:ring-[#262337] focus:border-[#262337] block w-full px-[25px] py-2.5"
+                       className="bg-inherit border border-[#262337] placeholder-[#A39DC0] outline-none text-[#A39DC0] text-[18px] rounded-[10px] focus:ring-[#262337] focus:border-[#262337] block w-full px-[25px] py-2.5"
                        placeholder="Повторный пароль"
                        required
                        value={password2}

@@ -48,7 +48,7 @@ export default function Header() {
                 </div>
                 <div className="flex lg:order-2">
                     <div className="flex items-center">
-                        <Link target="_blank" href="https://vk.com/boxbuild"
+                        <Link href="/auth/signup"
                               className="lg:flex items-center space-x-[15px] text-base hidden">
                             <Image
                                 src="/user.svg"
@@ -79,7 +79,7 @@ export default function Header() {
                     className={`${isVisible ? '' : 'hidden '}items-center transition-opacity justify-between mx-auto w-full lg:static lg:top-12 lg:left-0 px-3 lg:flex lg:w-auto lg:order-1`}>
                     <ul className={`${isVisible ? 'bg-[#121019] border-[#1A1724] ' : 'bg-auto '}flex flex-col font-normal text-opacity-20 text-sm px-4 mt-4 border rounded-lg lg:flex-row lg:space-x-[10px] lg:mt-0 lg:text-sm lg:font-semibold lg:border-0`}>
                         <li>
-                            <Link target="_blank" href="https://vk.com/boxbuild"
+                            <Link href="/auth/signup"
                                   className="flex items-center mt-[15px]  justify-center bg-[#1C1925] py-[13px] rounded-[5px] space-x-[15px] text-base lg:hidden">
                                 <Image
                                     src="/user.svg"

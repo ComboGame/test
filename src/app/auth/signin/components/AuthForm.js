@@ -37,7 +37,7 @@ export default function AuthForm({ }) {
                        onChange={(event) => {
                            setLogin(event.target.value)
                        }}
-                       className="bg-inherit border border-[#262337] placeholder-[#A39DC0] text-[#A39DC0] text-[18px] rounded-[10px] focus:ring-[#262337] focus:border-[#262337] block w-full px-[25px] py-2.5"
+                       className="bg-inherit border border-[#262337] placeholder-[#A39DC0] outline-none text-[#A39DC0] text-[18px] rounded-[10px] focus:ring-[#262337] focus:border-[#262337] block w-full px-[25px] py-2.5"
                        placeholder="Логин или электронная почта"
                        maxLength={20}
                        required
@@ -46,7 +46,7 @@ export default function AuthForm({ }) {
 
             <div className="relative mb-5">
                 <input type={passwordShown?"text":"password"} id="password"
-                       className="bg-inherit border border-[#262337] placeholder-[#A39DC0] text-[#A39DC0] text-[18px] rounded-[10px] focus:ring-[#262337] focus:border-[#262337] block w-full px-[25px] py-2.5"
+                       className="bg-inherit border border-[#262337] placeholder-[#A39DC0] outline-none text-[#A39DC0] text-[18px] rounded-[10px] focus:ring-[#262337] focus:border-[#262337] block w-full px-[25px] py-2.5"
                        placeholder="Пароль"
                        maxLength={50}
                        minLength={3}
