@@ -123,7 +123,7 @@ export default function Home() {
                 <hr className="bg-gradient-to-r h-px mx-[25px] md:mx-[140px] border-0 from-[#473B8A]/0 via-[#473B8A] to-[#473B8A]/0"/>
             </section>
             <div className="relative z-30">
-                <Link href="#plusi"
+                <Link href="#advantages"
                       className="flex absolute select-none mx-auto text-center ring-4 hover:ring-[#8072CF] transition-all ring-[#5A4F96] ring-offset-0 inset-x-0 -bottom-[20px] w-[40px] h-[40px] items-center justify-center bg-[#9C9CFF] rounded-full">
                     <Image
                         src="/strelka.svg"
@@ -136,7 +136,7 @@ export default function Home() {
                     />
                 </Link>
             </div>
-            <section id="plusi" className="text-center py-20 relative z-0 space-y-[25px] px-[25px] xl:px-0 text-white">
+            <section id="advantages" className="text-center py-20 relative z-0 space-y-[25px] px-[25px] xl:px-0 text-white">
                 <div className="flex flex-col xl:flex-row gap-[25px]">
                     <Link href="#"
                           className="sm:h-[360px] hover:bg-[#97786B]/15 transition-all relative w-full xl:w-[825px] bg-[#97786B]/10 border-[#9E7667]/25 border backdrop-blur-[100px] rounded-[10px]">

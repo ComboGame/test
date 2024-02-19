@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import Image from "next/image";
 import Link from 'next/link'
 import Header from "@/app/auth/components/header";
+import AuthForm from "@/app/auth/signin/components/AuthForm";
 
 const Gilroy = localFont({
     src: [
@@ -71,6 +72,7 @@ export const metadata = {
 };
 
 export default function SignIn() {
+
     return (
         <html lang="en" id="element"
               className="dark antialiased [--scrollbar-size:theme(width.4)] motion-safe:scroll-smooth">
@@ -104,42 +106,11 @@ export default function SignIn() {
                             </Link>
                         </div>
                         <p className="my-[25px] text-base text-white text-center mx-auto font-normal">или</p>
-                        <form className="mb-[50px] mx-auto">
-                            <div className="mb-5">
-                                <input type="login" id="login"
-                                       className="bg-inherit border border-[#262337] placeholder-[#A39DC0] text-[#A39DC0] text-[18px] rounded-[10px] focus:ring-[#262337] focus:border-[#262337] block w-full px-[25px] py-2.5"
-                                       placeholder="Логин" required/>
-                            </div>
-
-                            <div className="relative mb-5">
-                                <input type="password" id="password"
-                                       className="bg-inherit border border-[#262337] placeholder-[#A39DC0] text-[#A39DC0] text-[18px] rounded-[10px] focus:ring-[#262337] focus:border-[#262337] block w-full px-[25px] py-2.5"
-                                       placeholder="Пароль" required/>
-                                <button type="submit"
-                                        className="text-white absolute end-[0px] bottom-[5px] px-4 py-2">
-                                    <Image
-                                        src="/passwd.svg"
-                                        className="w-6 h-6"
-                                        width={24}
-                                        height={24}
-                                        alt="plus"
-                                    />
-                                </button>
-                            </div>
-                            <button type="submit"
-                                    className="text-[#28283B] select-none w-full bg-[#494965] font-bold sm:text-[20px] rounded-lg text-[18px] px-5 py-[15px] text-center">
-                                Войти
-                            </button>
-
-                            {/*<button type="submit"*/}
-                            {/*        className="text-[#28283B] select-none w-full bg-[#B8B8FF] hover:bg-[#CFCFFF] transition-all font-bold text-[20px] rounded-lg text-sm px-5 py-[15px] text-center">*/}
-                            {/*    Войти*/}
-                            {/*</button>*/}
-                        </form>
+                        <AuthForm/>
                         <div className="justify-center flex font-medium text-[14px] sm:text-[18px]">
                             <p className="">Ещё нет аккаунта?</p>
-                            <Link className="underline hover:no-underline ml-2" href="#">
-                            Зарегистрироваться
+                            <Link className="underline hover:no-underline ml-2" href="/auth/signup">
+                                Зарегистрироваться
                             </Link>
                         </div>
                     </div>
