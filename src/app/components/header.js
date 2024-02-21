@@ -30,7 +30,7 @@ export default function Header() {
 
     return (
         <nav
-            className={`${isVisible ? 'bg-none min-h-[100%]' : 'bg-[#0E0D14]/75 border-b border-[#14121C]/50'}  font-semibold  backdrop-blur-[8px] backdrop-saturate-150 px-[25px] xl:px-[25px] sm:px-4 overflow-y-hidden py-2.5 lg:py-4  fixed w-full z-50 top-0 left-0`}>
+            className={`${isVisible ? 'bg-none min-h-[100%]' : 'bg-[#0E0D14]/75 border-b border-[#14121C]/50'} font-semibold backdrop-blur-[8px] backdrop-saturate-150 px-[25px] xl:px-[25px] sm:px-4 overflow-y-hidden py-2.5 lg:py-4  fixed w-full z-50 top-0 left-0`}>
             <div className="container max-w-screen-xl  flex flex-wrap items-center justify-between mx-auto">
                 <div className="flex items-center p-2">
                     <Link className="flex items-center justify-center text-lg font-bold" href={`${pathname}`}>

@@ -190,6 +190,10 @@ body {
     border-radius: 100px;
 }
 
+#panel::-webkit-scrollbar {
+    width: 0px;
+}
+
 ::selection {
     background: #ff67b360;
     /* Safari */
