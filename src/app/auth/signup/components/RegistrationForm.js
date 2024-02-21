@@ -12,6 +12,12 @@ export default function RegistrationForm({}) {
     const [isPassword2Shown, setPassword2Shown] = useState(false);
 
     const [isSubmitDisabled, setSumbitDisabled] = useState(false);
+    const [isSubmitSent, setSubmitSent] = useState(false);
+
+    const [loginError, setLoginError] = useState(null);
+    const [emailError, setEmailError] = useState(null);
+    const [pass1Error, setPass1Error] = useState(null);
+    const [pass2Error, setPass2Error] = useState(null);
 
     function changePassword1Shown() {
         setPassword1Shown(!isPassword1Shown)
@@ -24,14 +30,33 @@ export default function RegistrationForm({}) {
     function handleRegistration(e) {
         e.preventDefault();
         setSumbitDisabled(true);
+        setSubmitSent(true)
+    }
+
+    const loginRegexp = new RegExp("^[\\w.-]{0,19}[0-9a-zA-Z]$");
+    const emailRegexp = new RegExp("^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$");
+
+    function verifyLogin(){
+        if(!loginRegexp.test(login) && login.length > 0){
+            setLoginError("Этот логин не подходит!")
+        }
+    }
+
+    function verifyEmail(){
+        if(!emailRegexp.test(email) && email.length > 0){
+            setEmailError("Введите действительную электронную почту")
+        }
+    }
+
+    function verifyPasswords(){
+        if(password1)
     }
 
     useEffect(() => {
-        if (login.length <= 0 || email.length <= 0 || password1.length <= 0 || password2.length <= 0) {
-            setSumbitDisabled(true)
-        } else {
-            setSumbitDisabled(false)
-        }
+        setLoginError(null)
+
+
+
     }, [login, email, password1, password2])
 
 
@@ -39,35 +64,42 @@ export default function RegistrationForm({}) {
         <form className="mb-[50px] mx-auto" onSubmit={handleRegistration}>
             <div className="mb-5">
                 <input type="login" id="login"
-                       className="bg-[#2F1119] border border-[#FF5C89] placeholder-[#A39DC0] outline-none text-[#FF5C89] text-[18px] rounded-[10px] block w-full px-[25px] py-2.5"
+                       className="duration-[.15s] bg-inherit border text-[#A39DC0] border-[#262337] placeholder-[#A39DC0] outline-none  text-[18px] rounded-[10px] block w-full px-[25px] py-2.5 aria-invalid:bg-[#2F1119] aria-invalid:text-[#FF5C89] aria-invalid:border-[#FF5C89]"
                        placeholder="Логин"
                        required
                        value={login}
+                       disabled={isSubmitSent}
+                       aria-invalid={!!loginError}
                        maxLength={20}
                        onChange={(e) => {
                            setLogin(e.target.value)
                        }}
                 />
-                <p className="mt-[6px] text-sm text-[#FF7DA0]">Ошибка! Такой логин уже занят!</p>
+                { loginError && <p className="mt-[6px] text-sm text-[#FF7DA0]">{loginError}</p> }
             </div>
             <div className="mb-5">
                 <input type="email" id="email"
-                       className="bg-inherit border border-[#262337] placeholder-[#A39DC0] outline-none text-[#A39DC0] text-[18px] rounded-[10px] focus:ring-[#262337] focus:border-[#262337] block w-full px-[25px] py-2.5"
+                       className="bg-inherit border border-[#262337] placeholder-[#A39DC0] outline-none text-[#A39DC0] text-[18px] rounded-[10px] focus:ring-[#262337] focus:border-[#262337] block w-full px-[25px] py-2.5 aria-invalid:bg-[#2F1119] aria-invalid:text-[#FF5C89] aria-invalid:border-[#FF5C89]"
                        placeholder="Электронная почта"
                        required
                        maxLength={50}
                        value={email}
+                       disabled={isSubmitSent}
+                       aria-invalid={!!emailError}
                        onChange={(e) => {
                            setEmail(e.target.value)
                        }}
                 />
+                { emailError && <p className="mt-[6px] text-sm text-[#FF7DA0]">{emailError}</p> }
             </div>
             <div className="relative mb-5">
                 <input type={isPassword1Shown ? "text" : "password"} id="password"
-                       className="bg-inherit border border-[#262337] placeholder-[#A39DC0] outline-none text-[#A39DC0] text-[18px] rounded-[10px] focus:ring-[#262337] focus:border-[#262337] block w-full px-[25px] py-2.5"
+                       className="bg-inherit border border-[#262337] placeholder-[#A39DC0] outline-none text-[#A39DC0] text-[18px] rounded-[10px] focus:ring-[#262337] focus:border-[#262337] block w-full px-[25px] py-2.5 aria-invalid:bg-[#2F1119] aria-invalid:text-[#FF5C89] aria-invalid:border-[#FF5C89]"
                        placeholder="Пароль"
                        required
                        value={password1}
+                       disabled={isSubmitSent}
+                       aria-invalid={!!pass1Error}
                        onChange={(e)=>{
                            setPassword1(e.target.value)
                        }}
@@ -86,12 +118,15 @@ export default function RegistrationForm({}) {
                     />
                 </button>
             </div>
+            { pass1Error && <p className="mt-[0px] text-sm text-[#FF7DA0]">{pass1Error}</p> }
             <div className="relative mb-5">
                 <input type={isPassword2Shown ? "text" : "password"} id="password-repeat"
-                       className="bg-inherit border border-[#262337] placeholder-[#A39DC0] outline-none text-[#A39DC0] text-[18px] rounded-[10px] focus:ring-[#262337] focus:border-[#262337] block w-full px-[25px] py-2.5"
+                       className="bg-inherit border border-[#262337] placeholder-[#A39DC0] outline-none text-[#A39DC0] text-[18px] rounded-[10px] focus:ring-[#262337] focus:border-[#262337] block w-full px-[25px] py-2.5 aria-invalid:bg-[#2F1119] aria-invalid:text-[#FF5C89] aria-invalid:border-[#FF5C89]"
                        placeholder="Повторный пароль"
                        required
                        value={password2}
+                       disabled={isSubmitSent}
+                       aria-invalid={!!pass2Error}
                        onChange={(e)=>{
                            setPassword2(e.target.value)
                        }}
@@ -109,6 +144,7 @@ export default function RegistrationForm({}) {
                         alt="plus"
                     />
                 </button>
+                { pass2Error && <p className="mt-[6px] text-sm text-[#FF7DA0]">{pass2Error}</p> }
             </div>
             <button
                 type="submit"

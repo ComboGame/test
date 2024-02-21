@@ -1,68 +1,8 @@
 import Header from "@/app/components/header";
-import localFont from 'next/font/local'
 import Image from "next/image";
 import Link from 'next/link'
 import Footer from "@/app/components/footer";
-const Gilroy = localFont({
-    src: [
-        {
-            path: 'fonts/Gilroy-Regular.woff2',
-            weight: '400',
-            style: 'normal',
-        },
-        {
-            path: 'fonts/Gilroy-Bold.woff2',
-            weight: 'bold',
-            style: 'normal',
-        },
-        {
-            path: 'fonts/Gilroy-Black.woff2',
-            weight: '900',
-            style: 'normal',
-        },
-        {
-            path: 'fonts/Gilroy-Light.woff2',
-            weight: '300',
-            style: 'normal',
-        },
-        {
-            path: 'fonts/Gilroy-Semibold.woff2',
-            weight: '600',
-            style: 'normal',
-        },
-        {
-            path: 'fonts/Gilroy-Medium.woff2',
-            weight: '500',
-            style: 'normal',
-        },
-        {
-            path: 'fonts/Gilroy-UltraLight.woff2',
-            weight: '200',
-            style: 'normal',
-        },
-        {
-            path: 'fonts/Gilroy-Extrabold.woff2',
-            weight: '800',
-            style: 'normal',
-        },
-        {
-            path: 'fonts/Gilroy-Heavy.woff2',
-            weight: '900',
-            style: 'normal',
-        },
-        {
-            path: 'fonts/Gilroy-Thin.woff2',
-            weight: '100',
-            style: 'normal',
-        },
-        {
-            path: 'fonts/Gilroy-BlackItalic.woff2',
-            weight: '900',
-            style: 'italic',
-        },
-    ],
-    variable: '--font-gilroy'
-})
+import {Gilroy} from "@/fonts/fonts";
 
 export default function Home() {
     return (
@@ -138,7 +78,7 @@ export default function Home() {
             </div>
             <section id="advantages" className="text-center py-20 relative z-0 space-y-[25px] px-[25px] xl:px-0 text-white">
                 <div className="flex flex-col xl:flex-row gap-[25px]">
-                    <Link href="#"
+                    <Link href=""
                           className="sm:h-[360px] hover:bg-[#97786B]/15 transition-all relative w-full xl:w-[825px] bg-[#97786B]/10 border-[#9E7667]/25 border backdrop-blur-[100px] rounded-[10px]">
                         <div
                             className="z-20 relative flex xl:items-start items-center justify-center xl:justify-start h-full">
@@ -176,7 +116,7 @@ export default function Home() {
                         </div>
 
                     </Link>
-                    <Link href="#"
+                    <Link href=""
                           className="sm:h-[360px] hover:bg-[#7EC5FF]/15 transition-all overflow-hidden relative w-full xl:w-[430px] bg-[#7EC5FF]/10 border-[#7EC5FF]/25 border backdrop-blur-[100px] rounded-[10px]">
                         <div
                             className="flex z-20 relative xl:items-start items-center justify-center xl:justify-start h-full">
@@ -207,7 +147,7 @@ export default function Home() {
                     </Link>
                 </div>
                 <div className="flex flex-col xl:flex-row gap-[25px]">
-                    <Link href="#"
+                    <Link href=""
                           className="sm:h-[360px] hover:bg-[#D0ACFF]/15 transition-all overflow-hidden relative w-full xl:w-[430px] bg-[#D0ACFF]/10 border-[#C193FF]/25 border backdrop-blur-[100px] rounded-[10px]">
                         <div
                             className="flex z-20 relative xl:items-start items-center justify-center xl:justify-start h-full">
@@ -235,7 +175,7 @@ export default function Home() {
                             />
                         </div>
                     </Link>
-                    <Link href="#"
+                    <Link href=""
                           className="sm:h-[360px] hover:bg-[#FFAFAF]/15 transition-all relative w-full xl:w-[825px] bg-[#FFAFAF]/10 border-[#FFAEAE]/25 border backdrop-blur-[100px] rounded-[10px]">
                         <div
                             className="flex z-20 relative xl:items-start items-center justify-center xl:justify-start h-full">
@@ -276,7 +216,7 @@ export default function Home() {
 
                 </div>
                 <div className="flex flex-col xl:flex-row gap-[25px]">
-                    <Link href="#"
+                    <Link href=""
                           className="sm:h-[360px] hover:bg-[#C2C6D3]/15 transition-all relative w-full xl:w-[825px] bg-[#C2C6D3]/10 border-[#C2C6D3]/25 border backdrop-blur-[100px] rounded-[10px]">
                         <div
                             className="flex z-20 relative xl:items-start items-center justify-center xl:justify-start h-full">
@@ -312,7 +252,7 @@ export default function Home() {
                         </div>
 
                     </Link>
-                    <Link href="#"
+                    <Link href=""
                           className="sm:h-[360px] hover:bg-[#A2FFB9]/15 transition-all overflow-hidden relative w-full xl:w-[430px] bg-[#A2FFB9]/10 border-[#A2FFB9]/25 border backdrop-blur-[100px] rounded-[10px]">
                         <div
                             className="flex z-20 relative xl:items-start items-center justify-center xl:justify-start h-full">
