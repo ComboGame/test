@@ -149,7 +149,7 @@ export default function Panel() {
                                     <label className="pr-[20px] inline-flex items-center cursor-pointer">
                                         <input type="checkbox" value="" className="sr-only peer"/>
                                         <div
-                                            className="relative w-[40px] h-[20px] bg-[#FFFFFF]/10 outline-none peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:bg-[#ABFFA1]/10 peer-checked:after:border-[#ABFFA1]/10 after:content-[''] after:absolute after:top-[3px] after:start-[3px] peer-checked:after:start-[8px] after:bg-[#FFFFFF]/10 after:border-[#FFFFFF]/10 after:border after:rounded-full after:h-[14px] after:w-[14px] after:transition-all peer-checked:bg-[#B8FC99]/10"></div>
+                                            className="relative w-[40px] h-[20px] bg-[#323137] outline-none peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:bg-[#8FC57B] peer-checked:after:border-[#8FC57B] after:content-[''] after:absolute after:top-[3px] after:start-[3px] peer-checked:after:start-[8px] after:bg-[#848387] after:border-[#848387] after:border after:rounded-full after:h-[14px] after:w-[14px] after:transition-all peer-checked:bg-[#476C39]"></div>
                                     </label>
                                 </div>
                                 <div
@@ -161,7 +161,7 @@ export default function Panel() {
                                     <label className="pr-[20px] inline-flex items-center cursor-pointer">
                                         <input type="checkbox" value="" className="sr-only peer"/>
                                         <div
-                                            className="relative w-[40px] h-[20px] bg-[#FFFFFF]/10 outline-none peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:bg-[#ABFFA1]/10 peer-checked:after:border-[#ABFFA1]/10 after:content-[''] after:absolute after:top-[3px] after:start-[3px] peer-checked:after:start-[8px] after:bg-[#FFFFFF]/10 after:border-[#FFFFFF]/10 after:border after:rounded-full after:h-[14px] after:w-[14px] after:transition-all peer-checked:bg-[#B8FC99]/10"></div>
+                                            className="relative w-[40px] h-[20px] bg-[#323137] outline-none peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:bg-[#8FC57B] peer-checked:after:border-[#8FC57B] after:content-[''] after:absolute after:top-[3px] after:start-[3px] peer-checked:after:start-[8px] after:bg-[#848387] after:border-[#848387] after:border after:rounded-full after:h-[14px] after:w-[14px] after:transition-all peer-checked:bg-[#476C39]"></div>
                                     </label>
                                 </div>
                             </div>

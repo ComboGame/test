@@ -19,8 +19,9 @@ export default function AccountLink() {
     return (
         <Link onMouseEnter={handleMouseEnter1} onMouseLeave={handleMouseLeave1} href="/panel"
               className={`w-full h-[50px] ${pathname === '/panel' ? 'text-[#D1CAFF] bg-[#FFFFFF]/5' : 'hover:text-[#FFFFFF] hover:*:stroke-[#FFFFFF] text-[#FFFFFF]/75 hover:bg-[#FFFFFF]/5'} transition-all text-[20px] font-semibold rounded-[10px] flex items-center justify-start`}>
-            <svg className={`ml-[15px] mr-[15px] ${pathname === '/panel' ? 'fill-[#D1CAFF] stroke-[#D1CAFF]' : (isHighlighted1 ? 'stroke-[#FFFFFF] fill-[#FFFFFF]' : 'fill-[#FFFFFF]/75 stroke-[#FFFFFF]/75')}`}
-                 width="25.000000" height="25.000000" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg
+                className={`ml-[15px] mr-[15px] ${pathname === '/panel' ? 'fill-[#D1CAFF] stroke-[#D1CAFF]' : (isHighlighted1 ? 'stroke-[#FFFFFF] fill-[#FFFFFF]' : 'fill-[#FFFFFF]/75 stroke-[#FFFFFF]/75')}`}
+                width="25.000000" height="25.000000" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                     <clipPath id="clip138_576">
                         <rect id="Пользователь" width="25.000000" height="25.000000" fill="white" fill-opacity="0"/>
@@ -32,6 +33,7 @@ export default function AccountLink() {
                           fill="#D1CAFF" fill-opacity="1.000000" fill-rule="evenodd"/>
                 </g>
             </svg>
+
             Аккаунт
         </Link>
     );
