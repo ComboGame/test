@@ -1,12 +1,18 @@
+"use client";
 import "./globals.css";
+import {SessionProvider} from "next-auth/react";
 
-export const metadata = {
-    title: "Автодонат Minecraft — BoxCMS",
-    description: "Новичек в сфере монетизации Minecraft проектов.",
-};
+// export const metadata = {
+//     title: "Автодонат Minecraft — BoxCMS",
+//     description: "Новичек в сфере монетизации Minecraft проектов.",
+// };
 
-export default function RootLayout({children}) {
+export default function RootLayout({ children, session }) {
     return (
-        <>{children}</>
+        <>
+            <SessionProvider session={session}>
+                {children}
+            </SessionProvider>
+        </>
     );
 }

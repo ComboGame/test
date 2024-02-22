@@ -9,8 +9,10 @@ module.exports = {
         extend: {
             fontFamily: {
                 sans: ['var(--font-gilroy)']
+            },
+            aria: {
+                invalid: 'invalid="true"'
             }
-
         },
     },
     plugins: [],
