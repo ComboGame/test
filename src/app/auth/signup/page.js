@@ -21,29 +21,6 @@ export default function SignUp() {
                 <div className="w-full pt-[160px] justify-center flex px-[25px] sm:px-0">
                     <div className="relative w-[460px]">
                         <h1 className="text-center font-semibold text-[36px] mb-[50px]">Регистрация</h1>
-                        {/*<div className="flex space-x-[10px] h-[50px] sm:h-[80px] w-full">*/}
-                        {/*    <Link href="#"*/}
-                        {/*          className="flex select-none items-center justify-center w-full bg-[#5865F2] rounded-[10px]">*/}
-                        {/*        <Image*/}
-                        {/*            src="/discord.svg"*/}
-                        {/*            className="h-[25px] sm:h-[35px]"*/}
-                        {/*            width={35}*/}
-                        {/*            height={35}*/}
-                        {/*            alt="plus"*/}
-                        {/*        />*/}
-                        {/*    </Link>*/}
-                        {/*    <Link href="#"*/}
-                        {/*          className="flex select-none items-center justify-center w-full bg-[#0077FF] rounded-[10px]">*/}
-                        {/*        <Image*/}
-                        {/*            src="/vkontact.svg"*/}
-                        {/*            className="h-[25px] sm:h-[35px]"*/}
-                        {/*            width={35}*/}
-                        {/*            height={35}*/}
-                        {/*            alt="plus"*/}
-                        {/*        />*/}
-                        {/*    </Link>*/}
-                        {/*</div>*/}
-                        {/*<p className="my-[25px] text-base text-white text-center mx-auto font-normal">или</p>*/}
                         <RegistrationForm/>
                         <div className="justify-center flex font-medium text-[14px] sm:text-[18px]">
                             <p className="">Уже есть аккаунт?</p>
